@@ -25,6 +25,7 @@ jobs:
         env:
           CIBW_BEFORE_ALL_LINUX: yum install -y libpcap-devel
           CIBW_BUILD: cp36-*
+          CIBW_ARCHS_LINUX: "x86_64"
 
       - uses: actions/upload-artifact@v3
         with:
